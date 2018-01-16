@@ -1,5 +1,17 @@
 Modular test suite written in python for test driven development.
 
+Create folder with tests titles names. You should then create one file
+per tests. In order for your test to work you must respect the following
+format :
+
+The first line of your test should have the path through the binary you want to
+compare your program to, separeted by a comma and the pass through your binary.
+
+Example, for my bash implementation (42sh), my tests file were starting the
+following way :
+bash-c,./42sh -c
+
+followed by your tests on the next line.
 usage: test_suite.py [-h] [-l] [-c CATEGORY] [-t TIMEOUT] [-s] [-q]
 
 optional arguments:
